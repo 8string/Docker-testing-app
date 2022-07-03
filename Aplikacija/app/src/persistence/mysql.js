@@ -1,6 +1,12 @@
 const waitPort = require('wait-port');
 const fs = require('fs');
 const mysql = require('mysql');
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 4db076feb5e646f66da43c35d53fbfb079e16aa0
 const {
     MYSQL_HOST: HOST,
     MYSQL_HOST_FILE: HOST_FILE,
@@ -12,7 +18,11 @@ const {
     MYSQL_DB_FILE: DB_FILE,
 } = process.env;
 
+
+
 let pool;
+
+
 
 async function init() {
     const host = HOST_FILE ? fs.readFileSync(HOST_FILE) : HOST;
